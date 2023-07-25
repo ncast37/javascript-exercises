@@ -42,12 +42,22 @@ const multiply = function(valuesArray) {
 };
 
 const power = function(number, exponent) {
-  
   return (number ** exponent);
-  
 };
 
-const factorial = function() {
+const factorial = function(factorial) {
+  if (factorial > 0){
+
+    let product = 1;
+
+    for (let i = 1; i <= factorial; i++){
+      product *= i; 
+    }
+    return product;  
+  } else {
+    return 1; 
+  }
+   
 	
 };
 
